@@ -33,7 +33,8 @@ namespace xnano
             containerRegistry.RegisterForNavigation<ConnectionPage>();
             containerRegistry.RegisterForNavigation<StreamPage>();
 
-            containerRegistry.RegisterPopupNavigationService();
+            //TODO check here - this crashes - no longer needed
+            //containerRegistry.RegisterPopupNavigationService();
 
             // Singletons
             containerRegistry.RegisterSingleton<IAuthenticationService, AuthenticationService>();
